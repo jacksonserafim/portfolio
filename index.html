@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>JACKSON SERAFIM | PORTIFÓLIO</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#inicio">INÍCIO</a></li>
+            <li><a href="#projetos">PROJETOS</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+        </ul>
+    </nav>
+    <header id="inicio">
+        <h1>Jackson Serafim</h1>
+        <h2>Desenvolvedor Fullstack</h2>
+        <p>Sou um apaixonado por programação e tecnologia, 
+            com experiência em criação de aplicações web utilizando HTML, 
+            CSS e JavaScript. Tenho conhecimento em frameworks como Flask 
+            para construção de backends e trabalhei com banco de dados 
+            PostgreSQL e sistema e de login/registro com o Firebase. Meu foco 
+            atual é aprimorar as habiliades que já possuo afim de desempenhar 
+            desenvolvimento cada vez mais eficiente e produtivo</p>
+    </header>
+    <main>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div class="skill">
+                    <i class="devicon-python-plain"></i>
+                    <p>Desenvolvimento em <span class="highlight">Python</span> para scripts e aplicações web.</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-flask-original"></i>
+                    <p>Construção de aplicações web backend com <span class="highlight">Flask</span>.</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-html5-plain"></i>
+                    <p>Estruturação semântica de páginas web com <span class="highlight">HTML5</span>.</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-css3-plain"></i>
+                    <p>Estilização e layouts responsivos com <span class="highlight">CSS3</span>.</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-javascript-plain"></i>
+                    <p>Estudo em <span class="highlight">JavaScript</span> para aplicações interativas e dinâmicas.</p>
+                </div>
+                <div class="skill">
+                    <i class="devicon-postgresql-plain"></i>
+                    <p>Criação, consultas e alterações em BD <span class="highlight">PostgreSQL</span>.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projetos">
+            <h2>Meus projetos</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                        <div class="proj-image">
+                            <img src="Placeholder_view_vector.svg" alt="">
+                        </div>
+                        <div class="slide-infos">
+                            <h3 class="proj-nome">Projeto1</h3>
+                            <div class="proj-info">
+                                <p class="info-content">Amet eu consequat pariatur in. Culpa labore aute occaecat et nisi proident occaecat aliqua ex occaecat nulla ullamco. Laboris velit consectetur nulla deserunt sit in voluptate consequat do dolor pariatur ex sunt mollit.</p>
+                            </div>
+                            <div class="proj-link"><a href="">Acessar projeto</a></div>
+                        </div>  
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="proj-image">
+                            <img src="Placeholder_view_vector.svg" alt="">
+                        </div>
+                        <h3 class="proj-nome">Projeto2</h3>
+                        <div class="proj-info">
+                            <p class="info-content">Amet eu consequat pariatur in. Culpa labore aute occaecat et nisi proident occaecat aliqua ex occaecat nulla ullamco. Laboris velit consectetur nulla deserunt sit in voluptate consequat do dolor pariatur ex sunt mollit.</p>
+                        </div>
+                        <div class="proj-link"><a href="">Acessar projeto</a></div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="proj-image">
+                            <img src="Placeholder_view_vector.svg" alt="">
+                        </div>
+                        <h3 class="proj-nome">Projeto3</h3>
+                        <div class="proj-info">
+                            <p class="info-content">Amet eu consequat pariatur in. Culpa labore aute occaecat et nisi proident occaecat aliqua ex occaecat nulla ullamco. Laboris velit consectetur nulla deserunt sit in voluptate consequat do dolor pariatur ex sunt mollit.</p>
+                        </div>
+                        <div class="proj-link"><a href="">Acessar projeto</a></div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>   
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <a href="https://br.linkedin.com/in/jackson-serafim" target="_blank"><i class="bi bi-linkedin"></i><span>LinkedIn</span></a>
+            <a href="https://github.com/jacksonserafim" target="_blank"><i class="bi bi-github"></i><span>Github</span></a>
+            <a href="https://wa.me/5547991892796" target="_blank"><i class="bi bi-whatsapp"></i><span>WhatsApp</span></a>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por<a href="https://www.linkedin.com/in/jackson-serafim/" target="_blank">Jackson</a></p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
