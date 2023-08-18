@@ -236,6 +236,7 @@ section {
 
 #contato a {
     display: block;
+    text-decoration: none;
 }
 
 #contato a i {
