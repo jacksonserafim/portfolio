@@ -228,6 +228,7 @@ section {
     color: var(--color-light);
     text-decoration: none;
     margin: auto;
+    display: block;
 }
 
 .proj-btn i {
