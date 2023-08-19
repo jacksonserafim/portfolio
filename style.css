@@ -170,17 +170,19 @@ section {
 .swiper {
     width: 85vw;
     height: 80vh;
-    border-radius: 25px;
 }
 
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
     align-items: center;
     display: flex;
     flex-direction: row;
     padding: 50px;
+}
+
+.info-content {
+    text-align: justify;
 }
 
 .swiper-slide img {
@@ -188,6 +190,11 @@ section {
     width: 100vw;
     height: 50vh;
     object-fit: cover;
+    image-rendering: optimizeSpeed;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: solid 3px var(--color-dark);
+    border-radius: 10px 0 0 10px;
 }
 
 .proj-image {
@@ -195,28 +202,36 @@ section {
     margin-right: 20px;
 }
 
-.proj-image img {
-    max-width: 100%;
-}
 
 .slide-infos {
     flex-grow: 1;
 }
 
-.proj-link {
-    margin-top: 30px;
+.proj-nome {
+    margin-top: 10px;
+}
+
+.proj-btn {
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: var(--color-dark);
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .proj-info {
     padding: 10px 20px;
 }
 
-.proj-link a {
-    background-color: var(--color-dark);
+.proj-btn a {
     color: var(--color-light);
-    padding: 10px 50px;
-    border-radius: 15px;
     text-decoration: none;
+    margin: auto;
+}
+
+.proj-btn i {
+    color: var(--color-light);
 }
 
 .swiper {
@@ -224,9 +239,13 @@ section {
     margin-right: auto;
 }
 
+.swiper-pagination {
+    margin-top: 50px;
+}
+
 /* Estilos para a seção de contato */
 #contato {
-    height: 100vh;
+    height: 100%;
     text-align: center;
 }
 
@@ -249,7 +268,21 @@ footer {
     width: 100vw;
     height: 30px;
     text-align: center;
-    background-color: var(--color-warning);
+    background-color: var(--color-dark);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+footer a {
+    color: var(--color-light);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer span, footer i {
+    color: var(--color-yellow);
 }
 
 @media screen and (max-width: 1000px) {
@@ -287,6 +320,13 @@ footer {
 
     .proj-image {
         margin-right: 0;
+        
+        
+    }
+
+    .proj-image img {
+        border: solid 3px var(--color-dark);
+        border-radius: 25px 25px 0 0;
     }
 
     .swiper-button-next, .swiper-button-prev {

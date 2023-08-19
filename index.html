@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
-    <title>JACKSON SERAFIM | PORTIFÓLIO</title>
+    <title>JACKSON SERAFIM | PORTFÓLIO</title>
 </head>
 <body>
     <nav>
@@ -60,38 +60,45 @@
                     
                     <div class="swiper-slide">
                         <div class="proj-image">
-                            <img src="Placeholder_view_vector.svg" alt="">
+                            <img src="static/img/rocket-nancial-screen.png" alt="Imagem de um site de gerenciamento de gastos, contendo escritas como adicionar gastos, logout, valor total das despesas e informações da despesas adicionadas">
                         </div>
                         <div class="slide-infos">
-                            <h3 class="proj-nome">Projeto1</h3>
+                            <h3 class="proj-nome">Site para gerenciamento de gastos</h3>
                             <div class="proj-info">
-                                <p class="info-content">Amet eu consequat pariatur in. Culpa labore aute occaecat et nisi proident occaecat aliqua ex occaecat nulla ullamco. Laboris velit consectetur nulla deserunt sit in voluptate consequat do dolor pariatur ex sunt mollit.</p>
+                                <p class="info-content">Este projeto foi desenvolvido com o objetivo de aprimorar minhas habilidades em backend e a criação de operações de CRUD, com menos foco no frontend. Tecnologias utilizadas: <span style="color: var(--color-yellow);">HTML5, CSS3, JavaScript, Python, Flask e PostgreSQL.</span></p></p>
+                                <button class="proj-btn"><a href="https://github.com/jacksonserafim/financialControl" target="_blank">Acessar <i class="bi bi-link-45deg"></i></a></button>
                             </div>
-                            <div class="proj-link"><a href="">Acessar projeto</a></div>
                         </div>  
                     </div>
                     
                     <div class="swiper-slide">
                         <div class="proj-image">
-                            <img src="Placeholder_view_vector.svg" alt="">
+                            <img src="static/img/jacksondev-tech-1024x768desktop200-98132c.png" alt="Imagem de um site de portfólio (este site mesmo)">
                         </div>
-                        <h3 class="proj-nome">Projeto2</h3>
-                        <div class="proj-info">
-                            <p class="info-content">Amet eu consequat pariatur in. Culpa labore aute occaecat et nisi proident occaecat aliqua ex occaecat nulla ullamco. Laboris velit consectetur nulla deserunt sit in voluptate consequat do dolor pariatur ex sunt mollit.</p>
-                        </div>
-                        <div class="proj-link"><a href="">Acessar projeto</a></div>
+                        <div class="slide-infos">
+                            <h3 class="proj-nome">Site para Portfólio</h3>
+                            <div class="proj-info">
+                                <p class="info-content">Este website foi criado do zero com o objetivo de servir como um projeto de treinamento e um portfólio para exibir meus trabalhos pessoais (o botão abaixo leva ao Github do projeto). Tecnologias utilizadas: <span style="color: var(--color-yellow);">HTML5, CSS3 e JavaScript.</span></p>
+                                <button class="proj-btn"><a href="https://github.com/jacksonserafim/portfolio" target="_blank">Acessar <i class="bi bi-link-45deg"></i></a></button>
+                            </div>
+                        </div>  
                     </div>
-                    
+
+
                     <div class="swiper-slide">
                         <div class="proj-image">
-                            <img src="Placeholder_view_vector.svg" alt="">
+                            <img src="static/img/sistema-votacao-screenshot.png" alt="Imagem de um notebook com o programa de votação aberto">
                         </div>
-                        <h3 class="proj-nome">Projeto3</h3>
-                        <div class="proj-info">
-                            <p class="info-content">Amet eu consequat pariatur in. Culpa labore aute occaecat et nisi proident occaecat aliqua ex occaecat nulla ullamco. Laboris velit consectetur nulla deserunt sit in voluptate consequat do dolor pariatur ex sunt mollit.</p>
-                        </div>
-                        <div class="proj-link"><a href="">Acessar projeto</a></div>
+                        <div class="slide-infos">
+                            <h3 class="proj-nome">Software de votação</h3>
+                            <div class="proj-info">
+                                <p class="info-content">Este projeto foi criado com o propósito de possibilitar a votação no grêmio estudantil. Utilizando um banco de dados remoto em conjunto com Python para desenvolver o programa usando PyQT. Tecnologias utilizadas: <span style="color: var(--color-yellow);">Python e PostgreSQL.</span></p></p>
+                                <button class="proj-btn"><a href="https://github.com/Thuripa/Urna_Eletronica_CEIT" target="_blank">Acessar <i class="bi bi-link-45deg"></i></a></button>
+                            </div>
+                        </div>  
                     </div>
+        
+
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -106,12 +113,12 @@
         </section>
     </main>
     <footer>
-        <p>Desenvolvido por<a href="https://www.linkedin.com/in/jackson-serafim/" target="_blank">Jackson</a></p>
+        <a href="https://www.linkedin.com/in/jackson-serafim/" target="_blank">Desenvolvido por <span>Jackson <i class="bi bi-box-arrow-up-right"></i></span></a>
     </footer>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
-    var swiper = new Swiper(".mySwiper", {
+    let swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
